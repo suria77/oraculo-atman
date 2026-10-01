@@ -54,8 +54,8 @@
   }
 
   /* ===== Tienda "Material Extra" (igual que en Japa-Movil) ===== */
-  .an-store-section { position: relative; max-width: 950px; margin: 18px auto 10px; padding: 28px 16px 32px; border-radius: 16px; overflow: hidden; background-size: cover; background-position: center; box-shadow: 0 15px 40px rgba(0,0,0,0.6); font-family: 'Helvetica Neue', Arial, sans-serif; }
-  .an-store-overlay { position: absolute; inset: 0; background: rgba(21, 10, 32, 0.6); z-index: 0; }
+  .an-store-section { position: relative; max-width: 950px; margin: 18px auto 10px; padding: 28px 16px 32px; border-radius: 16px; overflow: hidden; background-color: #5b1f8f; background-size: cover; background-position: center; box-shadow: 0 15px 40px rgba(0,0,0,0.6); font-family: 'Helvetica Neue', Arial, sans-serif; }
+  .an-store-overlay { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(110, 40, 160, 0.82), rgba(74, 20, 120, 0.88)); z-index: 0; }
   .an-store-main-title { position: relative; z-index: 1; text-align: center; color: #fcf6ba; font-weight: 700; font-size: 22px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 26px; text-shadow: 0 2px 8px rgba(0,0,0,0.8); }
   .an-store-group { position: relative; z-index: 1; }
   .an-store-group + .an-store-group { margin-top: 30px; }
@@ -410,7 +410,7 @@
     }
     var store = document.getElementById('anStore');
     store.innerHTML = '<div class="an-store-overlay"></div><h2 class="an-store-main-title">Material Extra</h2>' +
-      group('Packs', packsItems) + group('Libros &amp; Audiolibros', booksItems) + group('Música', musicItems);
+      group('Libros &amp; Audiolibros', booksItems) + group('Música', musicItems) + group('Packs', packsItems);
 
     store.addEventListener('click', function (e) {
       var btn = e.target.closest('[data-player]');
